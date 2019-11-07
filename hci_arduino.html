@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HCI technologies</title>
+		<link rel="stylesheet" type="text/css" href="css/hci.css">
+		<script type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Arduino</h1>
+		</div>
+		<div class="nav">
+			<a href="hci_homepage.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Topics
+					<i class="fa fa-caret-down">
+				</button>
+				<div class="dropdown-content">
+					<a href="hci_wearables.html">Wearables</a>
+					<a href="hci_playfullinteractions.html">Playfull Interactions</a>
+					<a href="hci_artificialcreatures.html">Artificial creatures</a>
+					<a href="hci_arenvr.html">AR & VR</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Workshops
+					<i class="fa fa-caret-down">
+				</button>
+				<div class="dropdown-content">
+					<a href="hci_arduino.html">Arduino</a>
+					<a href="hci_vrenviroment.html">VR enviroment</a>
+					<a href="hci_computervision.html">Computer Vision</a>
+				</div>
+			</div>
+			<a href="hci_excursion.html">Excursion</a>
+			<a href="hci_labweeks.html">Lab weeks</a>
+		</div>
+		<article>
+			<h3>Assignment</h3>
+				<p>
+					The first two workshops for HCI were all in the theme of working with Arduino, Arduino is a mini computer, essentialy, were you can put code on and then it will process this code and with the cables connected to the breadboard the set up you made up there will start working. You can make al sorts of things with Arduino it is an fun way to explore if you can work with your hands but still keep it in the ICT section. For the workshop you needed a starter kit and the Arduino software on your computer so you can code. The first workshop was the basics and the further you got in the exercises the harder they got. The first two exercises were more for getting too the know the software in the first one you had to use an example to see how you could save and compile codes you wrote in the program. The second one was about getting one LED to blink that you put on the breadboard and then connected to the arduino and run the program you uploaded in the first exercise.
+				</p>
+				<h4>Exercise 3C</h4>
+				<p>
+					The third exercise started to get more interesting because you had to work with multiple LEDs and sort of write your own code and not use an example to run on the Arduino. You had to put a green and yellow LED in the breadboard and connect to the Arduino, for the code I used the one from exercise one and two but changed it so instead of LED_BUILTIN in said pinMode(13, OUTPUT) for the LED I connected it too the Arduino. Too add the second LED you had to put the exact same bit of code but instead of thirteen it had to say twelve. After that you had to change the code too make the LEDs blink at the same time, then to make the LEDs alternate and as last to make the green LED blink twice as fast as the yellow LED. This one you can see the code from down below and in the video you can see the result of that code sorry for the noise it was filmed during the workshop and there was a lot of noise in the classroom. 
+				</p>
+				<figure>
+					<img class="arduino" src="images/code3c.jpg">
+				</figure>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/3TV3KAVqWnc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h4>Exercise 4C</h4>
+				<p>
+					The fourth exercise was about the analog output and how you could control the brightness of the LEDs and not only when they blink. To get familiar with this you could use the same set up as exercise three and the first bit of code was given to get the basics started and you had to change the pins the LEDs were connected too first, after that you could run the program and see how it worked, the code that I put into the program made sure that the green LED would alternate between on and off and that the yellow LED alternates between fully on and half on. After that I had to change the code so that the LEDs would fade from completely off to completely on. Once that fade was working I had to change the code so that one LED would fade in while the other LED would fade out, you can see the code for this part of the exercise down below and in the video you can see how it works.
+				</p>
+				<figure>
+					<img class="arduino" src="images/code4c.jpg">
+				</figure>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/c567p21UB9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>
+					After that I did the fifth exercise were you had to work with the potmeter value, this was an exercise to prepare for the sixth exercise which you can see the code of under this. In the fifth exercise you had to open a new window in the Arduino program and add a new code that I had to run on the Arduino and then open the serial monitor to see if the potmeter worked properly so that I could do exercise six without any problems.
+				</p>
+				<h4>Exercise 6C</h4>
+				<p>
+					In the sixth exercise you had to use the set up and code of the fifth exercise and you had to control the two LEDs with the potmeter. To do this I had to change the code from the fifth exercise, I had too add the folowing code: (sensorValue/1023)*255. After adding the code you had to make a float of the data type of the sensorValue, then you had to the variables for the LEDs, the pinMode for the LEDs and the analogWrite for both LEDs. After that you could verify the code and upload it to the board so I could see if the code I wrote worked or not. For the second part of the exercise you had to look at examples on the Arduino website and use the function map() in the code. As the last part of the exercise you had too make one LED fade in while the other fades out when you turn the potmeter, you can see the code for this part of the exercise down below and in the video you see how it works.
+				</p>
+				<figure>
+					<img class="arduino" src="images/code6c.jpg">
+				</figure>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/sM_WLJTClHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h4>Exercise 7</h4>
+				<p>
+					For the seventh exercise you had to control the LEDs with a light sensor, so too do that I had too switch out the potmeter for a light sensor but the rest of the set up could stay the same. The first part of the exercise was to comment the sensorValue = (sensorValue/1023)*255 of the code form exercise six because you had to use that code for the exercise. You had to verify the code and upload it too the board and open the serial monitor again to see how far the light sensor could go. You then had too uncomment the line and adjust to rescale it for the highest number you saw in the serial monitor. The code with the uncommented line and that was uploaded to the board is down below and a video with how the LEDs work with  the light sensor.
+				</p>
+				<figure>
+					<img class="arduino" src="images/code7.jpg">
+				</figure>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/d-Qzf05B5zM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h4>Exercise 8</h4>
+				<p>
+					For the eight exercise you had put a second light sensor with the first one from the set up from last exercise. The set up from the last exercises is based on a electronic circuit called voltage divider. De A0-A5 on the Arduino are all capable of a voltage between 0 and 5V in numbers this is between 0 and 1023 as you can see on the serial monitors when you use a light sensor. 
+				</p>
+				<p>
+					This exercise manipulates the power of the voltage that goes trough the resistor. When you first do the exercise nothing gets stopped but when you add another one everything gets stopped. First the voltage goes through the first resistor and then as last it goes through the second one. Because the voltage first has to go through the first resistor to get too the second one. So the first resistor is important to get the voltage too the second resistor you can see how it works in the code and video down below.
+				</p>
+				<figure>
+					<img class="arduino" src="images/code8.jpg">
+				</figure>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/XUuDxm0X3Ds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h4>Exercise 9B</h4>
+				<p>
+					For the ninth exercise you had too connect the Arduino to Processing, to do this you get the code for both Arduino and Processing. First you have to upload the Arduino code to the board before you can get through the processing part. Once you start put the Processing code in Processing you will see an ellipse that grows when you turn the potmeter. So if you just had to do that this exercise it would be too easy so you had to change the ellipse too something else. I decided to go with the traingle and grows lager when you turn the potmeter but it stays in its plays instead of moving around. In the code and video below you can see how it works.
+				</p>
+				<figure>
+					<img class="arduino" src="images/code9.jpg">
+					<img class="arduino2" src="images/processing.jpg">
+				</figure>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/jJe47SIgCcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h4>Exercise 10F</h4>
+				<p>
+					For the tenth exercise you had to build a new circuit on the breadboard that works with one LED light and one button. First you have too go to the Arduino website too get the example for the button and use that code too run on the board. After that you expand the code so you know how it works and then in exercise 10f you had too add a second button that when you press one of the buttons the LED lights up and it only works when you press one not both. Unfortunatly I couldn't make it wotk so down below you will see a picture of the circuit that I made, the code and a video of not working buttons.
+				</p>
+				<figure>
+					<img class="arduino" src="images/code10f.jpg">
+					<img class="arduino" src="images/IMG_2393.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/xs1Z8zaM5So" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</figure>
+				<h4>Exercise 11B</h4>
+				<p>
+					Fot the eleventh exercise you had to connect a servo too the board you had to start the code with #include < Servo.H >, after that you had to use the code that was given to you and upload it too the board and then the servo starts moving. Too make it more interessting then a servo just moving it's arm form side to side you had to make it make a funky movement. You can see how I did that in the code down below and the video.
+				</p>
+				<figure>
+					<img class="arduino" src="images/code11b.jpg">
+				</figure>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/LfFxhGluyqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h4>Exercise 12B</h4>
+				<p>
+					For the twelveth exercise you had to control the servo with inputs, first yuou had to make a cricuit including a potmeter too get a feel for how you need to code if you want too make a servo react too a input. For the code you had to use the one given in the example on the Arduino website. After that you had to switch out the potmeter for two buttons and make them inputs for the servo to react too. The code to make this work was given so it was easier to change to buttons from a servo. Unfortunatly I couldn't make it wotk so down below you will see a picture of the circuit that I made, the code and a video of not working buttons with a servo.
+				</p>
+				<figure>
+					<img class="arduino" src="images/code12b.jpg">
+					<img class="arduino" src="images/IMG_2394.jpeg">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/FSq9Up4PaoE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</figure>
+				<h4>Exercise 13B</h4>
+				<p>
+					For the final exercise you had to make sound come out of the speaker that you got in the starter kit with you Arduino board. Because this a hard exercise the code for was given to try out how it works, but for the real part you had to change the code up to make you own melody. Too see me melody you can see the code below and the video that I took of it.
+				</p>
+				<figure>
+					<img class="arduino" src="images/code13b.jpg">
+				</figure>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/kuJA9vTEUPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</article>
+		<footer>Tamara de Vries 2019</footer>
+	</body>
+</html>
